@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Poções e Soluções</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./js/api.js" defer></script>
+    <script src="./js/home.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="/" class="logo">Poções & Soluções</a>
+
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#historia">História</a>
+        <a href="#produtos">Poções</a>
+        <a href="/admin.html" class="admin-link">Admin</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-content">
+        <span class="eyebrow">Desde 1867</span>
+
+        <h1>Poções raras para problemas nada comuns.</h1>
+
+        <p>
+          Bem-vindo à loja Poções e Soluções, o refúgio mágico de Annabelle Merigold
+          no Beco da Última Saída. Aqui, tradição, mistério e alquimia se encontram
+          em frascos cuidadosamente preparados.
+        </p>
+
+        <a href="#produtos" class="primary-button">Ver poções disponíveis</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="section container">
+      <div class="section-header">
+        <span class="eyebrow">A loja</span>
+        <h2>Alquimia clássica com atendimento moderno</h2>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            A Poções e Soluções nasceu para atender bruxos, estudantes, artistas,
+            viajantes e curiosos que buscam soluções mágicas para situações do dia a dia.
+          </p>
+
+          <p>
+            Depois da pandemia de COVID-19, Annabelle Merigold decidiu levar sua loja
+            para o mundo digital, permitindo que seus clientes encontrem poções sem
+            precisar atravessar o Beco da Última Saída.
+          </p>
+        </div>
+
+        <div class="highlight-card">
+          <strong>Especialidade da casa</strong>
+          <p>
+            Poções criativas, misteriosas e cuidadosamente catalogadas para compradores
+            exigentes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="historia" class="section history-section">
+        <div class="container">
+            <div class="section-header">
+            <span class="eyebrow">História</span>
+            <h2>Uma tradição mágica desde 1867</h2>
+            </div>
+
+            <div class="history-grid">
+            <div class="history-text">
+                <p>
+                Fundada em 1867, a loja Poções e Soluções atravessou gerações mantendo
+                viva a arte das poções artesanais. Seus registros antigos contam histórias
+                de clientes que buscavam inspiração, beleza, coragem, verdades secretas
+                e até alguns centímetros a mais de altura.
+                </p>
+
+                <p>
+                O ambiente escuro, as prateleiras de madeira e os frascos coloridos fazem
+                parte da identidade da loja, que agora ganha uma nova vitrine digital.
+                </p>
+            </div>
+
+           <div class="history-visual">
+            <div class="potion-carousel" aria-label="Carrossel de poções">  <div class="history-visual">
+                <div class="history-photo">
+                <img
+                    src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=80"
+                    alt="Prateleiras antigas que representam a tradição da loja"
+                >
+                </div>
+
+            <div class="potion-carousel" aria-label="Carrossel de poções">
+                <button class="carousel-button prev" type="button" aria-label="Poção anterior">
+                    ‹
+                </button>
+
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="https://i.ibb.co/ZzS7xb2/rsz-sky.png" alt="Poção Blue Sky">
+                        <span>Poção Blue Sky</span>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="https://i.ibb.co/pyhZJXf/rsz-lilas.png" alt="Poção do Perfume Misterioso">
+                        <span>Poção do Perfume Misterioso</span>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="https://i.ibb.co/DkzdL1q/rsz-pinus.png" alt="Poção de Pinus">
+                        <span>Poção de Pinus</span>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="https://i.ibb.co/9p872NK/rsz-1beleza.png" alt="Poção da Beleza Eterna">
+                        <span>Poção da Beleza Eterna</span>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="https://i.ibb.co/PrC09MP/rsz-2unicornio.png" alt="Poção do Arco Íro">
+                        <span>Poção do Arco Íro</span>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="https://i.ibb.co/s9Lyvj8/rsz-verdades.png" alt="Caldeirão das Verdades Secretas">
+                        <span>Caldeirão das Verdades Secretas</span>
+                    </div>
+                    </div>
+                </div>
+
+                <button class="carousel-button next" type="button" aria-label="Próxima poção">
+                    ›
+                </button>
+
+                <div class="carousel-dots">
+                    <button type="button" class="active" data-slide="0" aria-label="Ir para poção 1"></button>
+                    <button type="button" data-slide="1" aria-label="Ir para poção 2"></button>
+                    <button type="button" data-slide="2" aria-label="Ir para poção 3"></button>
+                    <button type="button" data-slide="3" aria-label="Ir para poção 4"></button>
+                    <button type="button" data-slide="4" aria-label="Ir para poção 5"></button>
+                    <button type="button" data-slide="5" aria-label="Ir para poção 6"></button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="section container">
+      <div class="section-header">
+        <span class="eyebrow">Catálogo</span>
+        <h2>Poções disponíveis</h2>
+        <p>
+          Escolha sua poção preferida. A funcionalidade de compra será adicionada futuramente.
+        </p>
+      </div>
+
+      <p id="loading-message" class="loading-message">Carregando poções...</p>
+
+      <div id="potions-container" class="potions-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Poções & Soluções</h2>
+        <p>
+          Loja de poções de Annabelle Merigold, localizada no Beco da Última Saída.
+        </p>
+      </div>
+
+      <div>
+        <h3>Contato</h3>
+        <p>Email: contato@pocoesesolucoes.com</p>
+        <p>Telefone: +55 (16) 99999-1867</p>
+      </div>
+
+      <div>
+        <h3>Horário</h3>
+        <p>Segunda a sábado</p>
+        <p>08h às 19h</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

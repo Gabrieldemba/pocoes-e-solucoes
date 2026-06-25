@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Administração | Poções e Soluções</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <script src="./js/api.js" defer></script>
+  <script src="./js/admin.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="/" class="logo">Poções & Soluções</a>
+
+      <div class="nav-links">
+        <a href="/">Site público</a>
+        <a href="/admin.html" class="admin-link">Admin</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="admin-main container">
+    <section class="section-header admin-title">
+      <span class="eyebrow">Painel administrativo</span>
+      <h1>Gerenciar poções</h1>
+      <p>
+        Cadastre, visualize e remova poções disponíveis na loja.
+      </p>
+    </section>
+
+    <section class="admin-layout">
+      <div class="admin-card">
+        <h2>Cadastrar nova poção</h2>
+
+        <form id="potion-form" class="potion-form">
+          <div class="form-group">
+            <label for="name">Nome da poção</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ex: Poção da Coragem"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="description">Descrição</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="5"
+              placeholder="Descreva o efeito da poção"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="image">URL ou caminho da imagem</label>
+            <input
+              type="url"
+              id="image"
+              name="image"
+              placeholder="https://exemplo.com/imagem.jpg"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="price">Preço em moedas</label>
+            <input
+              type="number"
+              id="price"
+              name="price"
+              min="1"
+              step="1"
+              placeholder="300"
+              required
+            >
+          </div>
+
+          <button type="submit" class="primary-button full-button">
+            Cadastrar poção
+          </button>
+
+          <p id="admin-message" class="admin-message"></p>
+        </form>
+      </div>
+
+      <div class="admin-card table-card">
+        <h2>Poções cadastradas</h2>
+
+        <div class="table-wrapper">
+          <table class="potions-table">
+            <thead>
+              <tr>
+                <th>Imagem</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Ação</th>
+              </tr>
+            </thead>
+
+            <tbody id="admin-potions-list">
+              <tr>
+                <td colspan="5">Carregando poções...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
