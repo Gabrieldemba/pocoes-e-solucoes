@@ -69,19 +69,14 @@ async function loadAdminPotions() {
       adminPotionsList.appendChild(row);
     });
 
-    /*
-      Depois que as linhas são criadas, adicionamos o evento de clique
-      em todos os botões de remover.
-    */
+   
     const deleteButtons = document.querySelectorAll(".danger-button");
 
    deleteButtons.forEach((button) => {
   button.addEventListener("click", async () => {
     const id = button.dataset.id;
 
-    /*
-      Agora a remoção acontece diretamente, sem abrir a confirmação padrão do navegador.
-    */
+  
     try {
       await deletePotion(id);
       showMessage("Poção removida com sucesso!", "success");
@@ -111,10 +106,9 @@ potionForm.addEventListener("submit", async (event) => {
     price: Number(formData.get("price")),
   };
 
-  /*
-    Validação no frontend.
-    O backend também valida, mas validar no frontend melhora a experiência.
-  */
+ 
+   // Validação no frontend
+  
   if (!potion.name || !potion.description || !potion.image || !potion.price) {
     showMessage("Preencha todos os campos.", "error");
     return;

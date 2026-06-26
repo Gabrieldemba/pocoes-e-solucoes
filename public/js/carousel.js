@@ -53,7 +53,7 @@ dots.forEach((dot) => {
   });
 });
 
-/*
-  Troca automática a cada 4 segundos.
-*/
+
+  //Troca automática a cada 4 segundos.
+
 setInterval(goToNextSlide, 4000);

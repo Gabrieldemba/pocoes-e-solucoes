@@ -1,14 +1,14 @@
-/*
-  Este arquivo concentra as chamadas para o backend.
 
-  Assim, se a URL da API mudar no futuro, você altera apenas aqui.
-*/
+  //Este arquivo concentra as chamadas para o backend.
+
+ 
+
 
 const API_URL = "/api/potions";
 
-/*
-  Busca todas as poções cadastradas.
-*/
+
+  //Busca todas as poções cadastradas.
+
 async function getPotions() {
   const response = await fetch(API_URL);
 
@@ -19,9 +19,9 @@ async function getPotions() {
   return response.json();
 }
 
-/*
-  Cadastra uma nova poção.
-*/
+
+  //Cadastra uma nova poção.
+
 async function createPotion(potion) {
   const response = await fetch(API_URL, {
     method: "POST",
@@ -40,9 +40,9 @@ async function createPotion(potion) {
   return data;
 }
 
-/*
-  Remove uma poção pelo ID.
-*/
+
+  //Remove uma poção pelo ID.
+
 async function deletePotion(id) {
   const response = await fetch(`${API_URL}/${id}`, {
     method: "DELETE",

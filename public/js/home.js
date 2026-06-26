@@ -39,8 +39,8 @@ function createPotionCard(potion) {
   `;
 
   /*
-    O PDF diz que não precisa implementar a compra.
-    Então colocamos apenas uma mensagem simples.
+    a funcionalidade de compra não foi implementada.
+    Então coloquei apenas uma mensagem simples.
   */
   const buyButton = card.querySelector(".buy-button");
 
@@ -51,9 +51,9 @@ function createPotionCard(potion) {
   return card;
 }
 
-/*
-  Renderiza todas as poções na tela.
-*/
+
+ // Renderiza todas as poções na tela.
+
 async function loadPotions() {
   try {
     const potions = await getPotions();
